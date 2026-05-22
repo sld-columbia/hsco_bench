@@ -1,0 +1,11 @@
+{
+  "rows": 128,
+  "cols": 1,
+  "loaded_cols": 128,
+  "A_PLM_IN_WORD": 16384,
+  "B_PLM_IN_WORD": 128,
+  "O_PLM_OUT_WORD": 128,
+  "PLM_IN_WORD": 16512,
+  "PLM_OUT_WORD": 128,
+  "_comment": "Cycle estimator parameters for HLS cycle estimation. These parameters are used by the cycle estimator to calculate cycle counts for the DUMMY kernel."
+}

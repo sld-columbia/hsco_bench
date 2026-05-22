@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sld>
+  <accelerator name="dummy_sysc_catapult" desc="Example reference accelerator (structural only)" data_size="4" device_id="200" hls_tool="catapult_hls_sysc">
+    <param name="rows" desc="rows" />
+    <param name="cols" desc="cols" />
+    <param name="loaded_cols" desc="loaded_cols" />
+
+  </accelerator>
+</sld>

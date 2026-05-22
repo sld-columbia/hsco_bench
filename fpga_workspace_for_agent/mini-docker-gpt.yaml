@@ -1,0 +1,24 @@
+agent:
+  step_limit: 500
+  cost_limit: 3.0
+  output_path: ./trajectories/placeholder.json  # overridden by -o flag at runtime
+
+model:
+  model_class: litellm_response
+  model_name: "openai/gpt-5.4"
+  model_kwargs:
+    drop_params: true
+    reasoning:
+      effort: high
+
+environment:
+  environment_class: docker
+  image: python:3.11
+  cwd: /workspace
+  container_timeout: 1h
+  run_args:
+    - "--rm"
+    - "-v"
+    - "__ROOT_DIR__/PLACEHOLDER_WORKSPACE:/workspace"  # patched at runtime
+    - "--network=none"
+    - "--security-opt=no-new-privileges"
